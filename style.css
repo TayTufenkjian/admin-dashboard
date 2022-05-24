@@ -29,7 +29,17 @@ header {
 }
 
 .headerInfo {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+}
+
+.headerInfo-search {
     display: flex;
+}
+
+.headerInfo-user {
+    display: flex;
+    justify-content: space-around;
 }
 
 .headerActions {
@@ -38,7 +48,9 @@ header {
 }
 
 #search {
+    border-radius: 20px;
     flex: 1;
+    margin: 0 2rem;
 }
 
 .hello {
@@ -71,6 +83,7 @@ nav ul li {
 
 /* Main content styles */
 main {
+    background-color: #e9edf9;
     display: grid;
     grid-column: 2;
     grid-template-columns: 2fr 1fr;
