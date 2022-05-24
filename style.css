@@ -71,5 +71,14 @@ nav ul li {
 
 /* Main content styles */
 main {
+    display: grid;
     grid-column: 2;
+    grid-template-columns: 2fr 1fr;
 }
+
+.trending-user {
+    align-items: center;
+    display: flex;
+    margin-bottom: 1em;
+}
+
