@@ -10,7 +10,11 @@ ul {
     padding: 0;
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1 {
+    margin: 1em 0;
+}
+
+h2, h3, h4, h5, h6 {
     margin: 0.5em 0;
 }
 
@@ -80,6 +84,14 @@ nav ul li {
     margin-bottom: 1em;
 }
 
+.dashboardHeader, nav ul li {
+    display: flex;
+    align-items: center;
+}
+
+nav img {
+    margin-right: 1rem;
+}
 
 /* Main content styles */
 main {
