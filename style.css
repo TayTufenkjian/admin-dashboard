@@ -37,32 +37,55 @@ header {
     display: grid;
     grid-template-rows: 1fr 2fr;
     gap: 1rem;
-    padding: 1rem;
+    padding: 1rem 2rem;
 }
 
 .headerInfo {
     display: grid;
     grid-template-columns: 2fr 1fr;
+    height: 2rem;
+}
+
+.headerInfo .icon {
+    flex: 0;
+    width: 24px;
 }
 
 .headerInfo-search {
     display: flex;
 }
 
+.headerInfo-search input {
+    background: #e9edf9;
+    border: 1px solid #e5e5e5;
+    border-radius: 20px;
+    flex: 1;
+    margin: 0 1rem;
+}
+
 .headerInfo-user {
+    align-items: center;
     display: flex;
-    justify-content: space-around;
+    justify-content: end;
+}
+
+.headerInfo-user > * {
+    margin-right: 2rem;
+}
+
+.headerInfo-user .profilePhoto {
+    width: 40px;
+}
+
+.headerInfo-user .user-fullName {
+    color: #333;
+    font-size: 1.3rem;
+    font-weight: bold;
 }
 
 .headerActions {
     display: flex;
     align-items: center;
-}
-
-#search {
-    border-radius: 20px;
-    flex: 1;
-    margin: 0 2rem;
 }
 
 .hello {
