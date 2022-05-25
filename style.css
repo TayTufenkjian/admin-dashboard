@@ -77,6 +77,22 @@ header .buttons {
 
 
 /* Nav (sidebar) styles */
+.dashboardHeader {
+    margin-bottom: 2rem;
+}
+
+.dashboardHeader, nav ul li {
+    display: grid;
+    gap: 1rem;
+    grid-template-columns: 1fr 4fr;
+    align-items: center;
+}
+
+.dashboardHeader h1 {
+    font-size: 1.75rem;
+    margin-top: 0.75em;
+}
+
 nav {
     background: rgb(29, 153, 255);
     color: #fff;
@@ -99,27 +115,12 @@ nav img {
     justify-self: center;
 }
 
-.dashboardHeader, nav ul li {
-    display: grid;
-    gap: 1rem;
-    grid-template-columns: 1fr 4fr;
-    align-items: center;
-}
-
-.dashboardHeader h1 {
-    font-size: 1.75rem;
-    margin-top: 0.75em;
-}
-
-.dashboardHeader {
-    margin-bottom: 2rem;
-}
 
 /* Main content styles */
-.announcements-container {
+.announcements-container, .trending-container {
     background: #fff;
     border-radius: 10px;
-    padding: 1rem 2rem;
+    padding: 2rem;
 }
 
 .announcements p {
@@ -165,9 +166,10 @@ article {
 main {
     background-color: #e9edf9;
     display: grid;
+    gap: 2rem;
     grid-column: 2;
-    grid-template-columns: 2fr 1fr;
-    padding: 1rem;
+    grid-template-columns: 3fr 1fr;
+    padding: 2rem;
 }
 
 main h1 {
@@ -180,11 +182,11 @@ main h1 {
     gap: 2rem;
 }
 
-section {
-    padding-right: 1rem;
+.trending {
+    margin-top: 2rem;
 }
 
-.trendingContainer {
+.trending-container {
     display: grid;
     grid-template-columns: 1fr;
     row-gap: 1rem;
@@ -193,5 +195,10 @@ section {
 .trending-user {
     align-items: center;
     display: grid;
-    grid-template-columns: 1fr 2fr;
+    gap: 10px;
+    grid-template-columns: 40px 8fr;
+}
+
+.trending-user img {
+    width: 40px;
 }
