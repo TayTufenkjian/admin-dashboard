@@ -15,10 +15,15 @@ h1 {
     margin: 1em 0;
 }
 
-h2, h3, h4, h5, h6 {
+h2, h3, h4 {
     color: #333;
     margin: 0.5em 0;
 }
+
+h3 {
+    font-size: 1.2rem;
+}
+
 
 .container {
     display: grid;
@@ -111,6 +116,25 @@ nav img {
 }
 
 /* Main content styles */
+.announcements-container {
+    background: #fff;
+    border-radius: 10px;
+    padding: 1rem 2rem;
+}
+
+.announcements p {
+    color: #888;
+    margin-top: 0;
+}
+
+.announcements-item {
+    border-bottom: 2px solid #e5e5e5;
+}
+
+.announcements-item:last-child {
+    border: 0;
+}
+
 article {
     background-color: #fff;
     border-left: 8px solid gold;
